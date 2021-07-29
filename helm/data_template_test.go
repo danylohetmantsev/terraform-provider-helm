@@ -23,6 +23,7 @@ func TestAccDataTemplate_basic(t *testing.T) {
 				resource.TestCheckResourceAttrSet(datasourceAddress, "manifests.templates/deployment.yaml"),
 				resource.TestCheckResourceAttrSet(datasourceAddress, "manifests.templates/service.yaml"),
 				resource.TestCheckResourceAttrSet(datasourceAddress, "manifests.templates/serviceaccount.yaml"),
+				resource.TestCheckResourceAttrSet(datasourceAddress, "manifests.templates/rbac.yaml"),
 				resource.TestCheckResourceAttrSet(datasourceAddress, "manifests.templates/tests/test-connection.yaml"),
 				resource.TestCheckResourceAttrSet(datasourceAddress, "manifest"),
 				resource.TestCheckResourceAttrSet(datasourceAddress, "notes"),
